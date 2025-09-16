@@ -71,6 +71,7 @@ srt = [
     "torchvision",
     "cuda-python",
     "flashinfer_python==0.3.1",
+    "batch_invariant_ops@https://github.com/thinking-machines-lab/batch_invariant_op@9bfcaf6"
 ]
 
 blackwell = [

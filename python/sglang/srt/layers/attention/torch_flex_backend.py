@@ -13,6 +13,8 @@ if TYPE_CHECKING:
     from sglang.srt.layers.radix_attention import RadixAttention
     from sglang.srt.model_executor.model_runner import ModelRunner
 
+from batch_invariant_ops import enable_batch_invariant_mode
+enable_batch_invariant_mode()
 
 class TorchFlexAttnBackend(AttentionBackend):
     def __init__(self, model_runner: ModelRunner):
